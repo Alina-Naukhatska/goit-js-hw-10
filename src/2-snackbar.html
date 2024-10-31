@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -13,6 +14,31 @@
       <a class="back-link" href="./index.html">Go back</a>
       <h1 class="main-title">Snackbar</h1>
       </div>
+
+      <form class="form">
+        <label class="label-snackbar">
+            Delay (ms)
+            <input type="number" class="input-snackbar" name="delay" required />
+        </label>
+    
+        <fieldset>
+            <legend>State</legend>
+            <label>
+                <input type="radio" name="state" value="fulfilled" required />
+                <span class="custom-radio"></span>
+                Fulfilled
+            </label>
+            <label>
+                <input type="radio" name="state" value="rejected" required />
+                <span class="custom-radio"></span>
+                Rejected
+            </label>
+        </fieldset>
+    
+        <button type="submit" class="button-snackbar">Create notification</button>
+    </form>
+    
+    
 
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
